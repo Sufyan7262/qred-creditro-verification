@@ -1,0 +1,39 @@
+# Default values for example-service.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Override service name. Set to empty to default to chart name
+nameOverride: "pagerank-api"
+fullnameOverride: "pagerank-api"
+
+service:
+  type: ClusterIP
+  port: 80
+
+# Compute Resources required by this container. Cannot be updated.
+# More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+resources:
+  limits:
+    cpu: 1
+    memory: 400Mi
+  requests:
+    cpu: 200m
+    memory: 100Mi
+
+# Environment which the service is running in
+environment: ""
+
+# Number of desired pods. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
+replicaCount: 1
+
+# NodeSelector is a selector which must be true for the pod to fit on a node.
+# Selector which must match a node's labels for the pod to be scheduled on that
+# node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+nodeSelector: {}
+
+# If specified, the pod's tolerations.
+tolerations: []
+
+# If specified, the pod's scheduling constraints
+affinity: {}
+
