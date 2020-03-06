@@ -12,6 +12,6 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 
-#data:
-#  database_url: {{ .Values.database.url }}
-#  database_user: {{ .Values.database.username }}
+data:
+  database_url: {{ .Values.database.url }}
+  database_user: {{ .Values.database.username }}

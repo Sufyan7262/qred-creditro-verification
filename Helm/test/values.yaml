@@ -7,6 +7,6 @@ image:
 
 environment: "Test"
 
-#database:
-#  url: "jdbc:postgresql://hydra-test.c9otgot6wysb.eu-west-1.rds.amazonaws.com:5432/service_ratings"
-#  username: "user_rating"
+database:
+  url: "jdbc:postgresql://hydra-test.c9otgot6wysb.eu-west-1.rds.amazonaws.com:5432/service_ratings"
+  username: "user_rating"
