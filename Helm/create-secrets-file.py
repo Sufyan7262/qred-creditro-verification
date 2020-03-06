@@ -8,7 +8,7 @@ import json
 import subprocess
 
 # EDIT THESE VALUES
-SECRETS_NAME = "pagerank-api"
+SECRETS_NAME = ""
 # STOP EDITING
 
 def open_local(file_name): return open(os.path.join(os.path.dirname(__file__), file_name), 'r')

@@ -1,12 +1,12 @@
 replicaCount: 1
 
 image:
-  repository: 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/pagerank-api
+  repository: 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/creditro-verification-api
   tag: v0.0.0
   pullPolicy: IfNotPresent
 
 environment: "Test"
 
-database:
-  url: "jdbc:postgresql://hydra-test.c9otgot6wysb.eu-west-1.rds.amazonaws.com:5432/service_ratings"
-  username: "user_rating"
+#database:
+#  url: "jdbc:postgresql://hydra-test.c9otgot6wysb.eu-west-1.rds.amazonaws.com:5432/service_ratings"
+#  username: "user_rating"

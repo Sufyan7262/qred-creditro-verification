@@ -9,4 +9,4 @@ DOCKER_VERSION=$(<docker-version.txt)
 cd ../
 
 # Build docker image
-docker . build -t 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/pagerank-api:$DOCKER_VERSION
+docker . build -t 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/creditro-verification-api:$DOCKER_VERSION

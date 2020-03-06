@@ -8,4 +8,4 @@ DOCKER_VERSION=$(<docker-version.txt)
 $(aws ecr get-login --no-include-email --region eu-west-1)
 
 # Upload docker image to AWS ECR
-docker push 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/pagerank-api:$DOCKER_VERSION
+docker push 308405705166.dkr.ecr.eu-west-1.amazonaws.com/qred/creditro-verification-api:$DOCKER_VERSION

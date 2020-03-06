@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 
 # Override service name. Set to empty to default to chart name
-nameOverride: "pagerank-api"
-fullnameOverride: "pagerank-api"
+nameOverride: "creditro-verification-api"
+fullnameOverride: "creditro-verification-api"
 
 service:
   type: ClusterIP

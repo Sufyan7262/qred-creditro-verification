@@ -1,4 +1,4 @@
 apiVersion: v1                # The chart API version, always "v1" (required)
-description: pagerank-api  # A single-sentence description of this project (optional)
-name: pagerank-api         # The name of the chart (required)
+description: creditro-verification-api  # A single-sentence description of this project (optional)
+name: creditro-verification-api         # The name of the chart (required)
 version: 0.0.0                # A SemVer 2 version (required)
