@@ -13,4 +13,4 @@ kubectl config use-context arn:aws:eks:eu-west-1:308405705166:cluster/eks-prod-0
 ./create-secrets-file.py --env prod
 
 # Install service
-helm install --name pagerank-api ./ -f prod/values.yaml -f prod/secrets.values.yaml --set image.tag=$DOCKER_VERSION
+helm install --name creditro-verification-api ./ -f prod/values.yaml -f prod/secrets.values.yaml --set image.tag=$DOCKER_VERSION

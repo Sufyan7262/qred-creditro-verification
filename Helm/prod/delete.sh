@@ -9,4 +9,4 @@ cd ..
 kubectl config use-context arn:aws:eks:eu-west-1:308405705166:cluster/eks-prod-01
 
 # Delete service
-helm delete --purge pagerank-api
+helm delete --purge creditro-verification-api

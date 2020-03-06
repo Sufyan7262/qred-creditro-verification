@@ -37,27 +37,27 @@ spec:
         #readinessProbe:
         #  tcpSocket:
         #    port: http
-        env:
-        - name: spring.datasource.url
-          valueFrom:
-            configMapKeyRef:
-              name: {{ .Release.Name }}
-              key: database_url
-        - name: spring.datasource.username
-          valueFrom:
-            configMapKeyRef:
-              name: {{ .Release.Name }}
-              key: database_user
-        - name: spring.datasource.password
-          valueFrom:
-            secretKeyRef:
-              name: {{ .Release.Name }}
-              key: DB_password
-        - name: com.qred.pagerank.apiKey
-          valueFrom:
-            secretKeyRef:
-              name: {{ .Release.Name }}
-              key: Pagerank_ApiKey      
+#        env:
+#        - name: spring.datasource.url
+#          valueFrom:
+#            configMapKeyRef:
+#              name: {{ .Release.Name }}
+#              key: database_url
+#        - name: spring.datasource.username
+#          valueFrom:
+#            configMapKeyRef:
+#              name: {{ .Release.Name }}
+#              key: database_user
+#        - name: spring.datasource.password
+#          valueFrom:
+#            secretKeyRef:
+#              name: {{ .Release.Name }}
+#              key: DB_password
+#        - name: com.qred.pagerank.apiKey
+#          valueFrom:
+#            secretKeyRef:
+#              name: {{ .Release.Name }}
+#              key: Pagerank_ApiKey      
         ports:
         - name: http
           containerPort: 80
